@@ -1,7 +1,8 @@
-html>
+<html lang="en">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
     <style>
         table,
         td {
@@ -14,6 +15,7 @@ html>
     </style>
     <script>
         function calculate(numEntered) {
+            console.log(numEntered)
             if (numEntered == 'C') {
                 document.getElementById('answer').value = '';
             }
@@ -21,11 +23,10 @@ html>
                 document.getElementById('answer').value = eval(document.getElementById('answer').value);
             }
             else {
-                document.getElementById('answeralue') += numEntered;
+                document.getElementById('answer').value += numEntered;
             }
         }
     </script>
-
 </head>
 
 <body>
@@ -37,20 +38,20 @@ html>
             </tr>
             <tr>
                 <td onclick="calculate(1);">1</td>
-                <td>2</td>
-                <td>3</td>
-                <td onclick="calculate('+')">+</td>
+                <td onclick="calculate(2);">2</td>
+                <td onclick="calculate(3);">3</td>
+                <td onclick="calculate('+');">+</td>
             </tr>
             <tr>
                 <td onclick="calculate(4);">4</td>
-                <td>5</td>
-                <td>6</td>
-                <td onclick="calculate('-')" ;>-</td>
+                <td onclick="calculate(5);">5</td>
+                <td onclick="calculate(6);">6</td>
+                <td onclick="calculate('-');">-</td>
             </tr>
             <tr>
                 <td onclick="calculate(7);">7</td>
-                <td>8</td>
-                <td>9</td>
+                <td onclick="calculate(8);">8</td>
+                <td onclick="calculate(9);">9</td>
                 <td onclick="calculate('=')" ;>=</td>
             </tr>
 
