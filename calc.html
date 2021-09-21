@@ -4,13 +4,25 @@
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 
     <style>
+        body {
+            background-color: gray;
+        }
+
         table,
         td {
             border: 1px solid #000000;
+            margin-left: 500px;
+
         }
 
         td {
             cursor: pointer;
+            padding: 50px;
+            font-size: large;
+        }
+
+        tr {
+            background-color: rgb(42, 226, 165)
         }
     </style>
     <script>
@@ -37,24 +49,29 @@
                 <td onclick="calculate('C');">C</td>
             </tr>
             <tr>
-                <td onclick="calculate(1);">1</td>
-                <td onclick="calculate(2);">2</td>
-                <td onclick="calculate(3);">3</td>
-                <td onclick="calculate('+');">+</td>
+                <td onclick="calculate(1);"><b>1</b></td>
+                <td onclick="calculate(2);"><b>2</b></td>
+                <td onclick="calculate(3);"><b>3</b></td>
+                <td onclick="calculate('+');"><b>+</b></td>
             </tr>
             <tr>
-                <td onclick="calculate(4);">4</td>
-                <td onclick="calculate(5);">5</td>
-                <td onclick="calculate(6);">6</td>
-                <td onclick="calculate('-');">-</td>
+                <td onclick="calculate(4);"><b>4</b></td>
+                <td onclick="calculate(5);"><b>5</b></td>
+                <td onclick="calculate(6);"><b>6</b></td>
+                <td onclick="calculate('-');"><b>-</b></td>
             </tr>
             <tr>
-                <td onclick="calculate(7);">7</td>
-                <td onclick="calculate(8);">8</td>
-                <td onclick="calculate(9);">9</td>
-                <td onclick="calculate('=')" ;>=</td>
+                <td onclick="calculate(7);"><b>7</b></td>
+                <td onclick="calculate(8);"><b>8</b></td>
+                <td onclick="calculate(9);"><b>9</b></td>
+                <td onclick="calculate('.')" ;><b>.</b></td>
             </tr>
-
+            <tr>
+                <td onclick="calculate(0);"><b>0</b></td>
+                <td onclick="calculate('*');"><b>X</b></td>
+                <td onclick="calculate('/');"><b>/</b></td>
+                <td onclick="calculate('=')" ;><b>=</b></td>
+            </tr>
         </tbody>
     </table>
 </body>
